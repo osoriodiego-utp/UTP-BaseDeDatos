@@ -1,3 +1,5 @@
+DROP TABLE Asignatura
+
 CREATE TABLE Asignatura
 (	id_asignatura varchar2(5),
 	semestre numeric(2),
@@ -6,6 +8,8 @@ CREATE TABLE Asignatura
 	facultad numeric(2),
 	max_personas numeric(2)
 );
+ALTER TABLE Asignatura ADD CONSTRAINT Asignatura_PK PRIMARY KEY ( id_asignatura) ;
+
 -- SEMESTRE 1 ------------------------------------------------------------------
 INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max_personas)
 	VALUES ('IS105','1','Programacion I','5','06','25');
@@ -44,7 +48,7 @@ INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max
 INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max_personas)
 	VALUES ('CB342','3','Laboratorio de Fisica II','2','03','30');
 INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max_personas)
-	VALUES ('CB413','3','Matematicas III','3','03','30');
+	VALUES ('CB314','3','Matematicas III','3','03','30');
 INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max_personas)
 	VALUES ('IS304','3','Estructura de Datos','4','06','25');
 INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max_personas)
@@ -108,7 +112,7 @@ INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max
 INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max_personas)
 	VALUES ('IS893','8','Sistemas Distribuidos','3','06','25');
 INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max_personas)
-	VALUES ('IS823','8','Comunicaciones II','3','IS823','25');
+	VALUES ('IS823','8','Comunicaciones II','3','06','25');
 INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max_personas)
 	VALUES ('IS053','8','Gerencia de Proyectos','3','06','25');
 INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max_personas)
@@ -124,7 +128,7 @@ INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max
 INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max_personas)
 	VALUES ('IS9A0','9','Electiva A1','6','06','20');
 INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max_personas)
-	VALUES ('IS962','9','Admon. Proyectos de Software','3','06','20');
+	VALUES ('IS953','9','Admon. Proyectos de Software','3','06','20');
 INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max_personas)
 	VALUES ('IS962','9','Proyeco de Grado I','2','06','20');
 INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max_personas)
@@ -141,13 +145,3 @@ INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max
 	VALUES ('IS023','10','Autitoria de Sistemas','3','06','20');
 INSERT INTO Asignatura (id_asignatura, semestre, nombre, creditos, facultad, max_personas)
 	VALUES ('IS066','10','Proyeco de Grado II','6','06','20');
-
-
-
-
-
-
-
-
-
-
